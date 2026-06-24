@@ -1,0 +1,13 @@
+# Office temporary files
+~$*
+
+# Local scratch files
+work/
+outputs/
+*.tmp
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
