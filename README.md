@@ -19,6 +19,16 @@ Salesforce CLI is used for authentication and data retrieval, so the workbook do
 - Salesforce CLI (`sf`) installed and available from the command line
 - A Salesforce user that can read object and permission metadata
 
+## Download
+
+For normal use, download the `.xlsm` workbook from GitHub Releases.
+
+Start with the latest release asset:
+
+```text
+オブジェクト定義取得.xlsm
+```
+
 ## Workbook
 
 The macro-enabled workbook is stored in:
@@ -35,6 +45,47 @@ workbook/オブジェクト定義取得.xlsm
 4. Enter the Salesforce object API name in `C5`.
 5. Click `接続`.
 6. Complete browser authentication when Salesforce CLI opens the browser.
+
+## Macro Security Notice
+
+This repository contains an Excel macro-enabled workbook (`.xlsm`).
+
+Before enabling macros:
+
+- Review the VBA source code under `src/vba/`.
+- Confirm that Salesforce CLI is installed from a trusted source.
+- Test the workbook in a safe environment first.
+- Prefer testing with a Salesforce sandbox before using it against production.
+- Follow your organization's security policies and software usage rules.
+
+このリポジトリにはマクロ有効ブック（`.xlsm`）が含まれます。
+
+マクロを有効化する前に、以下を確認してください。
+
+- `src/vba/` 配下のVBAコードを確認すること
+- Salesforce CLIが信頼できる入手元からインストールされていること
+- 事前に安全な環境で検証すること
+- 本番環境で利用する前にSandboxで検証すること
+- 所属組織のセキュリティポリシー・利用規程に従うこと
+
+## Project Policy
+
+Issues are accepted for bug reports, questions, and improvement ideas.
+However, this project is maintained on a best-effort basis.
+There is no guarantee that issues will be reviewed, fixed, or answered.
+
+Pull requests are not accepted.
+If you want to modify this tool, please fork or clone the repository and maintain your own version.
+
+GitHub Actions is intentionally disabled for this repository.
+
+不具合報告、質問、改善案としてIssueは受け付けます。
+ただし、仕事や私生活を優先するため、必ず確認・修正・回答する保証はありません。
+
+Pull Requestは受け付けません。
+改修したい場合は、このリポジトリをforkまたはcloneし、ご自身のリポジトリで管理してください。
+
+このリポジトリではGitHub Actionsを意図的に無効化しています。
 
 ## Source Layout
 
