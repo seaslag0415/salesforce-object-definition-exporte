@@ -1,4 +1,4 @@
-# getObjectDefine
+# salesforce-object-definition-exporte
 
 Excel VBA tool for exporting Salesforce object metadata and permissions.
 
